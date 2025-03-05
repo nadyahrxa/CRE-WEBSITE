@@ -21,7 +21,7 @@
   header {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/robot12.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/robot12.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -627,7 +627,6 @@
   }
   /* Recover App */
   
-  /* Team Section */
 .team {
   width: 100%;
   min-height: 100vh;
@@ -637,7 +636,6 @@
   background-color: #f5f5f5;
 }
 
-/* Judul dan Deskripsi */
 .team .container > h1,
 .team .container > p {
   text-align: center;
@@ -653,7 +651,6 @@
   color: #555;
 }
 
-/* Container untuk slider */
 .team-slider {
   display: flex;
   align-items: center;
@@ -662,7 +659,6 @@
   position: relative;
 }
 
-/* Wrapper untuk anggota tim */
 .team-box {
   display: flex;
   width: 80%;
@@ -673,12 +669,11 @@
 }
 
 .team-box::-webkit-scrollbar {
-  display: none; /* Sembunyikan scrollbar */
+  display: none; 
 }
 
-/* Box anggota tim */
 .team-box .box {
-  flex: 0 0 30%; /* Tampilkan 3 anggota dalam satu tampilan */
+  flex: 0 0 30%; 
   text-align: center;
   padding: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -687,13 +682,11 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Efek hover pada box */
 .team-box .box:hover {
   transform: translateY(-5px);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Foto profil */
 .team-box .box .people {
   display: flex;
   align-items: center;
@@ -710,12 +703,10 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* Efek hover pada gambar */
 .team-box .box:hover .people img {
   transform: scale(1.1);
 }
 
-/* Deskripsi orang */
 .team-box .box .people .people-desc h3 {
   font-size: 1.2rem;
   color: #333;
@@ -726,7 +717,6 @@
   color: gray;
 }
 
-/* Tombol navigasi (Prev & Next) */
 .prev-btn, .next-btn {
   background-color: black;
   color: white;
@@ -742,7 +732,6 @@
   background-color: grey;
 }
 
-/* Posisi tombol navigasi */
 .prev-btn {
   position: absolute;
   left: 5%;
@@ -757,9 +746,6 @@
   transform: translateY(-50%);
 }
 
-/* RESPONSIVE DESIGN */
-
-/* Tampilan tablet: Tampilkan 2 anggota per slide */
 @media (max-width: 768px) {
   .team-box .box {
       flex: 0 0 45%;
@@ -771,7 +757,6 @@
   }
 }
 
-/* Tampilan HP: Tampilkan 1 anggota per slide */
 @media (max-width: 480px) {
   .team-box .box {
       flex: 0 0 100%;
